@@ -1,0 +1,38 @@
+﻿GameCardLibary
+
+Built for educational and recreational purposes.
+
+If you have a gambling problem, seek help:
+* 1-800-GAMBLER
+* http://www.gamblersanonymous.org/
+* professional counsleor / therapist
+
+Roadmap
+
+Phase 1
+
+* Get basic CardGameLibary coded and working
+* Create unit tests
+* Make 1 very basic game that runs by itself
+1. Create game with 2 players
+2. Deal hand of X cards to each player
+3. Each player plays best card
+4. Compare cards
+5. Loser has to draw or both draw in tie
+6. First one out wins
+7. Goto 3
+* Put on github at this point
+* Use DI (dependency injection) for IGame interface. Choose DI library.
+* Make basic valid game 2 (something popular and recognizable)
+* Use DI
+
+Phase 2 ideas
+
+* Create web project
+* Create WebAPI wrapper around library
+* RESTful services (JSON based)
+* Determine persistence and in-memory storage strategy (some in memory objects for game sessions and some persisted entities)
+* Display images with the SVG card image library from wikipedia. Looks like it's licensable.
+* HTML5
+* AngularJS or similar
+* SignalR - multiplayer

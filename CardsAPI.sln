@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsAPI", "CardsAPI\CardsAPI.csproj", "{B557A346-1A8E-40ED-BD1F-410ADB751E9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardLibrary", "CardLibrary\CardLibrary.csproj", "{C8EB045A-7175-4D73-A642-90FC12E1D711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsAPITest", "CardsAPITest\CardsAPITest.csproj", "{DCBC29C7-C4AC-4789-B94A-3C26046EBEE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B557A346-1A8E-40ED-BD1F-410ADB751E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B557A346-1A8E-40ED-BD1F-410ADB751E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B557A346-1A8E-40ED-BD1F-410ADB751E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B557A346-1A8E-40ED-BD1F-410ADB751E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8EB045A-7175-4D73-A642-90FC12E1D711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8EB045A-7175-4D73-A642-90FC12E1D711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8EB045A-7175-4D73-A642-90FC12E1D711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8EB045A-7175-4D73-A642-90FC12E1D711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBC29C7-C4AC-4789-B94A-3C26046EBEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBC29C7-C4AC-4789-B94A-3C26046EBEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBC29C7-C4AC-4789-B94A-3C26046EBEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBC29C7-C4AC-4789-B94A-3C26046EBEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
