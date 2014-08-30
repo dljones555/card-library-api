@@ -61,7 +61,7 @@ namespace CardGame
                     if (winner.Item1 != player2)
                         player2.Draw(game.Deck, 1);
                 }
-                else // tie in this teest
+                else // tie
                 {
                     Console.WriteLine("Tie");
                     player1.Draw(game.Deck, 1);
@@ -69,7 +69,6 @@ namespace CardGame
                 }
 
                 Console.WriteLine();
-
             }
             while (game.Deck.AvailableCards.Count > 0);
 
@@ -79,7 +78,7 @@ namespace CardGame
 
         public static void WriteMessage(Player p, Card c, string msg)
         {
-            Console.WriteLine( string.Format("{0} {1} - {2} of {3}({4}) {5}", p.FirstName, p.LastName, c.Name,  c.Suit, c.Rank, msg) );
+            Console.WriteLine( string.Format("{0} {1} - {2} of {3}({4}) {5}", p.FirstName, p.LastName, c.Name, c.Suit, c.Rank, msg) );
         }
 
     }

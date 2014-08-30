@@ -10,7 +10,27 @@ namespace CardGameLibrary
     public class Deck<T> : IDeck<T> where T : Card
     {
         private int _deckSize;
+
         public bool IsShuffled { get; set; }
+        public bool MakeAcesHigh { get; set; }
+   
+        public List<T> AvailableCards
+        {
+            get;
+            set;
+        }
+
+        public List<T> DealtCards
+        {
+            get;
+            set;
+        }
+
+        public List<T> DiscardPile
+        {
+            get;
+            set;
+        }
 
         public Deck()
         {
@@ -125,7 +145,7 @@ namespace CardGameLibrary
                 throw new Exception("No cards left to deal exception.");
 
             var cards = AvailableCards.Take(numCards).ToList();
-            cards.ToList().ForEach(c => { AvailableCards.Remove(c); });
+            cards.ForEach(c => { AvailableCards.Remove(c); });
             DealtCards.AddRange(cards);
 
             return cards;
@@ -136,31 +156,9 @@ namespace CardGameLibrary
             DiscardPile.Add(card);
         }
 
-        public List<T> AvailableCards
-        {          
-            get; set;
-        }
-
-        public List<T> DealtCards
-        {
-            get; set;
-        }
-
-        public List<T> DiscardPile
-        {
-            get; set;
-        }
-
-        public void ResetDeck()
-        {
-            Initialize();
-        }
-
         public void Remove(T card)
         {
-            var cardToRemove = AvailableCards.Find(c => c.Rank == card.Rank &&
-                                                        c.Name == card.Name &&
-                                                        c.Suit == card.Suit);
+            var cardToRemove = AvailableCards.Find(c => c.Rank == card.Rank && c.Name == card.Name && c.Suit == card.Suit);
             AvailableCards.Remove(cardToRemove);
         }
 
@@ -169,10 +167,11 @@ namespace CardGameLibrary
             AvailableCards.RemoveRange(0, numCards);
         }
 
-        public bool MakeAcesHigh
+        public void ResetDeck()
         {
-            get;
-            set;
+            Initialize();
         }
+
+
     }
 }

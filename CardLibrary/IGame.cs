@@ -14,7 +14,6 @@ namespace CardGameLibrary
         List<Tuple<Player,int>> DetermineGameWinner();
         List<Tuple<Player,Card>> CompareLastCardPlayed();
         List<Tuple<Player, List<Card>>> CompareLastCardsPlayed();
-        // Idea: make this Play Func based with an int completion value
         void Play();
     }
 }

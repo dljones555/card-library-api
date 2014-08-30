@@ -25,7 +25,7 @@ namespace CardGameLibrary
         // PickPile is a player's own facedown pile one works from - this is used in some card games
         Stack<Card> PickPile { get; set; }
 
-        // Intent: implement ability to things card plays like straight, pairs, etc. TBD if this makes sense.
+        // Intent: implement ability to check for things like straight, pairs, etc. TBD if this makes sense.
         bool CheckFor(List<Card> cards);
 
         int GetPlayedTotal();

@@ -64,9 +64,9 @@ namespace CardGameLibrary
 
         public virtual void Discard(Deck<Card> deck, Card card)
         {
-            var discardCard = Hand.Find(c => c.Rank == card.Rank &&
-                                             c.Name == card.Name &&
-                                             c.Suit == card.Suit);
+            var discardCard = Hand.Find(c => c.Rank == card.Rank && 
+                                        c.Name == card.Name && 
+                                        c.Suit == card.Suit);
             deck.DiscardPile.Add(discardCard);
             Hand.Remove(discardCard);
         }
