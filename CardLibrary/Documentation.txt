@@ -2,10 +2,7 @@
 
 Built for educational and recreational purposes.
 
-If you have a gambling problem, seek help:
-* 1-800-GAMBLER
-* http://www.gamblersanonymous.org/
-* professional counsleor / therapist
+Gambling problem, seek help: 1-800-GAMBLER - professional counsleor / therapist
 
 Roadmap
 
@@ -22,9 +19,8 @@ Phase 1
 6. First one out wins
 7. Goto 3
 * Put on github at this point
-* Use DI (dependency injection) for IGame interface. Choose DI library.
 * Make basic valid game 2 (something popular and recognizable)
-* Use DI
+* Use Dependency Injection
 
 Phase 2 ideas
 
