@@ -2,12 +2,13 @@
 
 Built for educational and recreational purposes.
 
-Gambling problem, seek help: 1-800-GAMBLER - professional counsleor / therapist
+Gambling problem, seek help: 1-800-GAMBLER - professional counselor / therapist
 
 Roadmap
 
 Phase 1
 
+* This was based on a goal to code something in a few hours / short period of time. Code is not optimized.
 * Get basic CardGameLibary coded and working
 * Create unit tests
 * Make 1 very basic game that runs by itself
